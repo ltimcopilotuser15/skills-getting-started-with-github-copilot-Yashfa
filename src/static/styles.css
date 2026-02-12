@@ -13,11 +13,37 @@
   font-size: 1em;
 }
 .participants-list {
-  list-style-type: disc;
-  margin: 0 0 0 1.5em;
+  list-style-type: none;
+  margin: 0;
   padding: 0;
   color: #333;
   font-size: 0.97em;
+}
+.participant-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.3em;
+}
+.participant-email {
+  flex: 1;
+  padding-right: 0.5em;
+}
+.delete-participant {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.2em 0.4em;
+  margin-left: 0.2em;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+.delete-participant:hover {
+  background: #ffe5e5;
+}
+.delete-icon {
+  font-size: 1.1em;
+  color: #d32f2f;
+  vertical-align: middle;
 }
 .participants-section.empty {
   color: #888;
